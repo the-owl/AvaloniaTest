@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Text Editor" Width="800" Height="600">
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="File">
+        <MenuItem Header="Open"></MenuItem>
+        <MenuItem Header="Save"></MenuItem>
+        <MenuItem Header="Save as"></MenuItem>
+      </MenuItem>
+      <MenuItem Header="Help">
+        <MenuItem Header="About this app"></MenuItem>
+      </MenuItem>
+    </Menu>
+    <DockPanel>
+      <ListBox DockPanel.Dock="Left" Width="200" SelectionMode="Single">
+        <ListBoxItem>File 1</ListBoxItem>
+        <ListBoxItem>File 2</ListBoxItem>
+        <ListBoxItem>File 3</ListBoxItem>
+      </ListBox>
+      <TextBox>
+        Sample text
+      </TextBox>
+    </DockPanel>
+  </DockPanel>
+</Window>
